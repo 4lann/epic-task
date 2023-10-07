@@ -1,0 +1,91 @@
+3<!DOCTYPE html>
+<html lang="pt-BR">
+        <head>
+                <meta charset="UTF-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+                <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+                <title>Exemplo</title>
+        </head>
+        <body>
+                
+            <nav>
+                <div class="nav-wrapper">
+                <a href="#" class="brand-logo">Exemplo</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li class="active"><a href="cadastrar.html">criar tarefas</a></li>
+                    <li><a href="index.html">tarefas</a></li>
+                    <li><a href="perfil.html">Perfil</a></li>
+                </ul>
+                </div>
+            </nav>
+
+        <main class="container">
+
+                <h4>Cadastrar Tarefas</h4>
+
+                <div class="row">
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s12">
+                              <input id="titulo" type="text" class="validate" minlength="3">
+                              <label for="titulo">Titulo</label>
+                              <span class="helper-text" data-error="Titulo muito curto. Preencha pelo menos com 3 caracteres." data-success="Titulo válido">Digite o titulo da tarefa</span>
+                            </div>
+                          </div>
+
+                          <div class="row">
+                            <div class="input-field col s12">
+                              <textarea id="descricao" class="materialize-textarea"></textarea>
+                              <label for="descricao">Descrição</label>
+                            </div>
+                          </div>
+
+
+                          <div class="row">
+                            <div class="input-field col s12">
+                              <input id="pontos" type="number" class="validate" min="1" max="100">
+                              <label for="pontos">Pontos</label>
+
+                              <span 
+                                class="helper-text" 
+                                data-error="Pontuação inválida, informe o valor entre 01 e 100" 
+                                data-success="">
+                                Digite a pontuação da tarefa
+                            </span>
+
+                            </div>
+                          </div>
+
+                          <div class="row">
+                            <div class="col">
+                                <a href="index.html"class="btn red">Cancelar</a>
+                            </div>
+        
+                            <div class="col">
+                                <a href="index.html"class="btn green">Salvar</a>
+                            </div>
+                        </div>
+                          
+                    
+
+                     </form>
+                </div>
+
+
+        </main>
+
+            <div class="fixed-action-btn">
+                <a href="cadastrar.html" class="btn-floating btn-large red">
+                <i class="large material-icons">add</i>
+                </a>
+                </div>
+
+
+        </body>
+</html>
+
+
+
